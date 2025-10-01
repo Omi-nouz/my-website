@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChillBar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         body {
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color:rgb(143, 233, 9);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        nav h1 {
+            color: rgb(240, 159, 8);
+            margin-right: auto;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 14px 20px;
+        }
+        nav a:hover {
+            background-color: rgb(248, 136, 8);
+            color: black;
+        }
+        nav button {
+            padding: 10px;
+            background-color: rgb(248, 142, 3);
+            border: 0;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background-color: rgb(143, 233, 9);
+            color: rgb(10, 236, 48);
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: 900px;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2em;
+            font-weight: bold;
+        color: rgba(235, 39, 4, 0.938);
+        }
+        .main-abt {
+            padding: 20px;
+            text-align: center;
+        }
+        .main-abt h1 {
+            color: black;
+        }
+        .main-abt hr {
+            border: 2px solid orange;
+            width: 5%;
+            margin: 10px auto;
+        }
+        .abt-cont {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .abt-cont img {
+            width: 500px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        .abt-cont p {
+            font-size: 1.2em;
+            text-align: justify;
+        }
+        .gal-cont {
+            background-color:rgb(143, 233, 9);
+            padding: 20px;
+        }
+        .gal-cont h1 {
+            text-align: center;
+        }
+        .gal-cont hr {
+            border: 2px solid lightgoldenrodyellow;
+            width: 5%;
+            margin: 10px auto;
+        }
+        .gal-img {
+            display: flex;
+            justify-content: center;
+        }
+        .gal-img img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>ChillBar</h1>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <img src="img/Chill Bar.png" alt="Hero Image">
+        <div class="hero-text">Welcome to my Bar</div>
+    </div>
+    <main>
+        <!-- About Section -->
+        <div class="main-abt" id="about">
+            <h1>ABOUT US</h1>
+            <hr>
+            <div class="abt-cont">
+                <img src="img/f2.PNG" alt="About Image">
+                <div>
+                    <p>ChillBar is a trendy bar and restaurant that offers a unique blend of delicious food, refreshing drinks, and a vibrant atmosphere. Our menu features a variety of dishes made with fresh, locally sourced ingredients, as well as an extensive selection of craft sof drinks with some ice.</p>
+                    <button>Read more</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="gal-cont" id="gallery">
+            <h1>Gallery</h1>
+            <hr>
+            <div class="gal-img">
+                <img src="img/f1.PNG" alt="">
+                <img src="img/f10.jpg" alt="">
+                <img src="img/f6.PNG" alt="">
+                <img src="img/f4.PNG" alt="">
+                <img src="img/f3.jpg" alt="">
+                <img src="img/f8.jpg" alt="">
+                <img src="img/f14.jpg" alt="">
+                <img src="img/f15.jpg" alt="">
+            </div>
+        <div class="review">
+            <h1>Reviews</h1>
+  <div class="main.test">
+    <figure>
+        <img src="img/Jack.jpg" alt="">
+        <figcaption>
+            <div class="r1">
+            <p><q>I love the food here. It's Great. ⭐⭐⭐⭐⭐
+            </q></p>
+            <p>-Mark</p>
+            </div>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="img/Jack.jpg" alt="">
+        <figcaption>
+            <div class="r2"></div>
+            <p><q>It's better than my wife's cooking. ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+            </q></p>
+            <p>-Authur</p>
+        </div>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="img/Jack.jpg" alt="">
+        <figcaption>
+            <div class="r3">
+            <p><q>Great Chef, Food, Service, and Environment. ⭐⭐⭐⭐⭐
+            </q></p>
+            <p>-Caleb</p>
+            </div>
+        </figcaption>
+    </figure>
+  </div>
+  <div class="cont">
+    <div class="cont-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.863535338885!2d-0.18297052415447237!3d5.732786531844909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf77d6f9aed69b%3A0x4b72360d02bc529b!2sAgape%20Academy%20International!5e0!3m2!1sen!2sgh!4v1758831111284!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="form">
+            <h1>Contact Us</h1>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Type message here">
+            <div class="send">
+             <button>Send</button>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
