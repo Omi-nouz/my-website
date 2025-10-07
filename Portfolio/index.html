@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color:rgb(24, 31, 131);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        nav h1 {
+            color: rgb(240, 159, 8);
+            margin-right: auto;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 14px 20px;
+        }
+        nav a:hover {
+            background-color:rgba(235, 39, 4, 0.938);
+            color: black;
+        }
+        nav button {
+            padding: 10px;
+            background-color: rgb(248, 142, 3);
+            border: 0;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background-color: rgb(143, 233, 9);
+            color: rgb(10, 236, 48);
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: 900px;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2em;
+            font-weight: bold;
+            color: rgba(235, 39, 4, 0.938);
+        }
+        .main-abt {
+            padding: 20px;
+            text-align: center;
+        }
+        .main-abt h1 {
+            color: black;
+        }
+        .main-abt hr {
+            border: 2px solid white;
+            width: 5%;
+            margin: 10px auto;
+        }
+        .abt-cont {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .abt-cont img {
+            width: 500px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        .abt-cont p {
+            font-size: 1.2em;
+            text-align: justify;
+        }
+        .gal-cont {
+            background-color:rgb(24, 31, 131);
+            padding: 20px;
+        }
+        .gal-cont h1 {
+            text-align: center;
+        }
+        .gal-cont hr {
+            border: 2px solid lightgoldenrodyellow;
+            width: 5%;
+            margin: 10px auto;
+        }
+        .gal-img {
+            display: flex;
+            justify-content: center;
+        }
+        .gal-img img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin:10px;
+        }
+        *{
+            margin:0;
+            padding:0;
+            font-family:Arial,Helvetica, sans-serif;
+            font-size:16px;
+            color:white;
+        }
+        footer{
+            background: #343434;
+            padding-top:50px;
+        }
+        .container{
+            width:1140px;
+            margin:auto;
+            display:flex;
+            justify-content: center;
+        }
+        .footer-content{
+            width:33.3%
+        }
+        h3{
+            font-size:28px;
+            margin-bottom:15px;
+            text-align:center;
+        }
+        .footer-content p{
+            width:190px;
+            margin:auto;
+            padding:7px;
+        }
+        .footer-content{
+            text-align:center;
+        }
+        .List{
+            padding:0;
+        }
+        .List li{
+            width:auto;
+            text-align:center;
+            list-style-type:none;
+            padding:7px;
+            position:relative;
+        }
+        .list li::before{
+            position:absolute;
+            left:50%;
+            top:100%;
+            width:0;
+            height:2px;
+        }
+        .list li:hover::before{
+            width:70px;
+        }
+        .social-icons{
+            text-align:center;
+            padding:0;
+        }
+        .social-icons li{
+            display:inline-block;
+            text-align:center;
+            padding:5px;
+        }
+        .social-icons i{
+            color:white;
+            font-size:25px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:rgb(214, 13, 13);
+        }
+        .social-icons i:hover{
+            color:rgb(24, 31, 131);
+        }
+        .bottom-bar{
+            background:rgb(0, 0, 0);
+            text-align:center;
+            padding:10px 0;
+            margin-top:50px;
+        }
+        .bottom-bar p{
+            color:rgb(241, 9, 9);
+            margin:0;
+            font-size:16px;
+            padding:7px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Engmann</h1>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#gallery">Projects</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+    <div class="hero">
+        <img src="image.jpg" alt="Hero Image">
+        <div class="hero-text">Welcome to my Web</div>
+    </div>
+    <main>
+        <!-- About Section -->
+        <div class="main-abt" id="about">
+            <h1>About Me</h1>
+            <hr>
+            <div class="abt-cont">
+                <img src="p.PNG" alt="About Image">
+                <div>
+                    <p style="color:black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corporis suscipit accusamus dicta aut ratione. Adipisci sit laudantium, qui voluptatem, alias ad dolorum animi itaque distinctio commodi voluptates perferendis officiis.</p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab error facilis eligendi delectus deleniti ex voluptatibus velit dolores. Dolor veniam voluptatum qui ipsum eius. Rem fuga atque quos itaque facere.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet impedit quia repellendus cumque, odio ea minima quos, maxime ratione, voluptate commodi ad? Esse illum porro modi debitis a vitae corporis!
+                    <button>Read more</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="gal-cont" id="gallery">
+            <h1>Projects</h1>
+            <hr>
+            <div class="gal-img">
+                <img src="login.PNG" alt="">
+                <img src="output2.PNG" alt="">
+                <img src="output.PNG" alt="">
+            </div>
+        
+  <div class="cont">
+    <div class="cont-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.863535338885!2d-0.18297052415447237!3d5.732786531844909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf77d6f9aed69b%3A0x4b72360d02bc529b!2sAgape%20Academy%20International!5e0!3m2!1sen!2sgh!4v1758831111284!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="form">
+            <h2>Contact Me</h2>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Type message here">
+            <div class="send">
+             <button>Send</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email:ethanengmann6@gmail.com</p>
+                <p>Phone:0554951323</p>
+                <p>Address: Your Address 123 street</p>
+        </div>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+            <ul class="list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#gallery">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Moi</h3>
+            <ul class="social-icons">
+            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2025 your company. All rights reserved</p>
+    </div>
+    </div>
+    </footer>
+    </main>
+</body>
+</html>
