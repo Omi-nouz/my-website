@@ -1,0 +1,64 @@
+*{
+ text-decoration: none;
+}
+.navbar{
+    background:aqua;
+    font-family:calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navdiv{
+    display:flax;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo a{
+    font-size:35px;
+    font-weight:600;
+    color:blue;
+}
+li{
+    list-style:none;
+    display:inline-block;
+}
+li a{
+    color:wheat;
+    font-size: 18px;
+    font-weight:bold;
+    margin-right:25px;
+}
+
+html{
+    font-size:62.5;   
+}
+body{
+    width:100%;
+    height:100vh;
+    overflow-x:hidden;
+    background-color: aqua;
+    color:white;
+}
+header{
+    margin-top:20px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:1rem 9%;
+    background-color:transparent;
+    filter: drop-shadow(10px);
+    display:flex;
+    justify-content:space-between;
+    align-self:center;
+    z-index:100;
+}
+section{
+    min-height:100vh;
+    padding:5rem 9% 5rem;
+}
+.home{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:8rem;
+}
